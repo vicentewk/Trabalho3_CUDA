@@ -2,7 +2,7 @@
 all: compile
 
 compile:
-	gcc -o 2 2pesquisar.c -fopenmp
+	nvcc -o trab3 analise_genoma_cuda.cu -lm
 
 clean:
 	rm -rf ?
